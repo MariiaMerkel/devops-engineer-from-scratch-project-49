@@ -1,0 +1,4 @@
+.env
+.venv/
+brain_games/__pycache__/
+*.pyc
