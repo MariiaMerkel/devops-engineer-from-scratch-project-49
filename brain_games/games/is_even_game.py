@@ -6,7 +6,7 @@ def main():
     print("Welcome to the Brain Games!")
 
 
-NUMBERS = (1, 2, 3, 4, 5, 6, 7, 8, 9)
+# NUMBERS = (1, 2, 3, 4, 5, 6, 7, 8, 9)
 
 MAX_TRIES = 3
 RULES = "Input 'yes' if number is even and 'no' if number is not even."
@@ -19,7 +19,7 @@ def check_answer(question: int, answer: str) -> bool:
 
 
 def get_question():
-    question = random.choice(NUMBERS)
+    return random.randint(1, 9)
 
 
 if __name__ == "__main__":
