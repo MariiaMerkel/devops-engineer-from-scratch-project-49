@@ -13,15 +13,14 @@ RULES = "Calculate the greatest common divided and input result."
 
 
 def check_answer(question: str, answer: str) -> bool:
-    calculation = calculation_of_excperation(question)
-    print(f"calculation >>> {calculation}")
+    calculation = calculation_of_expression(question)
     return calculation == int(answer)
 
 
 def get_question():
     return str(f"{random.randint(1, 100)} {random.randint(1, 100)}")
 
-def calculation_of_excperation(question:str) -> int:
+def calculation_of_expression(question:str) -> int:
     first, second = question.split(' ')
     return math.gcd(int(first), int(second))
 

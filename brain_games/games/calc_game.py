@@ -13,8 +13,7 @@ RULES = "Calculate the expression and input result."
 
 
 def check_answer(question: str, answer: str) -> bool:
-    calculation = calculation_of_excperation(question)
-    print(f"calculation >>> {calculation}")
+    calculation = calculation_of_expression(question)
     return calculation == int(answer)
 
 
@@ -39,7 +38,7 @@ def get_question():
 
     return str(f"{first} {operator} {second}")
 
-def calculation_of_excperation(question:str) -> int:
+def calculation_of_expression(question:str) -> int:
     first, operator, second = question.split(' ')
 
     match operator:
