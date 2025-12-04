@@ -3,4 +3,3 @@
 brain_games/__pycache__/
 *.pyc
 .vscode/
-uv.lock

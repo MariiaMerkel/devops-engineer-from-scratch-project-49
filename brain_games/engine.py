@@ -5,7 +5,7 @@ from typing import Callable
 
 
 def game_engine (rules: str, max_tries: int, func_question: Callable, check_answer: Callable):
-	name, city = welcome_user()
+	name = welcome_user()
 	print(f"Game rules: {rules}")
 	win = False
 	count_tries = 0
