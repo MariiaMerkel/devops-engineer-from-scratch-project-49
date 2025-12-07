@@ -22,4 +22,4 @@ def game_engine (rules: str, max_tries: int, func_question: Callable):
 			print(f"'{str(answer)}' is wrong answer ;(. Correct answer was '{str(correct_answer)}].\nLet's try again, {name}!")
 			break
 		if count_tries == max_tries:
-			print(f"Congratulations {name}! You win!")
+			print(f"Congratulations, {name}! You win!")
