@@ -7,7 +7,7 @@ def main():
 
 
 MAX_TRIES = 3
-RULES = "Input the missing element"
+RULES = "What number is missing in the progression?"
 
 
 def check_answer(question: str, answer: str) -> bool:
@@ -21,7 +21,7 @@ def get_question():
     progressive = [first + step * i for i in range(10)]
     global right_answer
     right_answer = progressive[skip]
-    progressive[skip] = '...'
+    progressive[skip] = '..'
     return str(', '.join(str(x) for x in progressive)), right_answer
 
 if __name__ == "__main__":
