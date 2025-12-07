@@ -2,6 +2,8 @@ import random
 
 
 right_answer = 0
+
+
 def main():
     print("Welcome to the Brain Games!")
 

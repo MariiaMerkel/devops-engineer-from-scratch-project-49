@@ -15,5 +15,6 @@ def get_question():
     second = random.randint(1, 100)
     return str(f"{first} {second}"), math.gcd(int(first), int(second))
 
+
 if __name__ == "__main__":
     main()

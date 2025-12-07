@@ -1,9 +1,9 @@
-import prompt
 import random
 
 
 def main():
     print("Welcome to the Brain Games!")
+
 
 MAX_TRIES = 3
 RULES = 'Answer "yes" if the number is even, otherwise answer "no".'
