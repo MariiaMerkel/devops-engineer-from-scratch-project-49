@@ -9,7 +9,7 @@ def main():
 # NUMBERS = (1, 2, 3, 4, 5, 6, 7, 8, 9)
 
 MAX_TRIES = 3
-RULES = "Input 'yes' if number is even and 'no' if number is not even."
+RULES = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def check_answer(question: int, answer: str) -> bool:
