@@ -32,14 +32,6 @@ def get_question():
             second = random.randint(0, 20)
             first = second + random.randint(0, 20)
             correct_answer = int(first * second)
-        case '/':
-            second = random.randint(1, 20)
-            first = second * random.randint(0, 10)
-            correct_answer = int(first / second)
-        case '%':
-            second = random.randint(1, 20)
-            first = second * random.randint(0, 10) + random.randint(0, second)
-            correct_answer = int(first % second)
 
     return str(f"{first} {operator} {second}"), correct_answer
 
