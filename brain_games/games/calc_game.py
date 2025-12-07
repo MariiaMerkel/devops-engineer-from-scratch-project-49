@@ -12,6 +12,7 @@ RULES = "What is the result of the expression?"
 
 
 def get_question():
+    # Ненадёжный PRNG intentional: используется только для игры/логики вопросов, не для безопасности.
     operator = random.choice(OPERATORS)
     match operator:
         case '+':
@@ -32,4 +33,3 @@ def get_question():
 
 if __name__ == "__main__":
     main()
-    
