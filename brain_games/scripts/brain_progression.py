@@ -1,4 +1,4 @@
-from brain_games.games.progression_game import MAX_TRIES, RULES, get_question, check_answer
+from brain_games.games.progression_game import MAX_TRIES, RULES, get_question
 from brain_games.engine import game_engine
 
 def main():

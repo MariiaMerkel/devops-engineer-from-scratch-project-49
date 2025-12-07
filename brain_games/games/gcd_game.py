@@ -6,10 +6,8 @@ def main():
     print("Welcome to the Brain Games!")
 
 
-OPERATORS = ('+', '-', '*', '/', '%')
-
 MAX_TRIES = 3
-RULES = "Calculate the greatest common divided and input result."
+RULES = "Find the greatest common divisor of given numbers."
 
 def get_question():
     first = random.randint(1, 100)
