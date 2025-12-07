@@ -17,9 +17,9 @@ def check_answer(question: str, answer: str) -> bool:
 
 
 def get_question():
-    first = random.randint(1, 10)
-    step = random.randint(1, 10)
-    skip = random.randint(0, 9)
+    first = random.randbelow(11)
+    step = random.randbelow(11)
+    skip = random.randbelow(10)
     progressive = [first + step * i for i in range(10)]
     global right_answer
     right_answer = progressive[skip]

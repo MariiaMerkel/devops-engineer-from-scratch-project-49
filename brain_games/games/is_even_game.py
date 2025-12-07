@@ -16,7 +16,7 @@ def check_answer(question: int, answer: str) -> bool:
 
 
 def get_question():
-    question = random.randint(1, 9)
+    question = random.randbelow(101)
     return question, "yes" if question % 2 == 0 else "no"
 
 

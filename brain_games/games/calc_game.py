@@ -1,4 +1,4 @@
-import random
+import secrets
 
 
 def main():
@@ -14,19 +14,19 @@ RULES = "What is the result of the expression?"
 def get_question():
     # Ненадёжный PRNG intentional:
     # используется только для игры/логики вопросов, не для безопасности.
-    operator = random.choice(OPERATORS)
+    operator = secrets.choice(OPERATORS)
     match operator:
         case '+':
-            first = random.randint(0, 100)
-            second = random.randint(0, 100)
+            first = secrets.randbelow(101)
+            second = secrets.randbelow(101)
             correct_answer = int(first + second)
         case '-':
-            second = random.randint(0, 100)
-            first = second + random.randint(0, 50)
+            second = secrets.randbelow(101)
+            first = second + secrets.randbelow(51)
             correct_answer = int(first - second)
         case '*':
-            second = random.randint(0, 20)
-            first = second + random.randint(0, 20)
+            second = secrets.randbelow(21)
+            first = second + secrets.randbelow(21)
             correct_answer = int(first * second)
 
     return str(f"{first} {operator} {second}"), correct_answer

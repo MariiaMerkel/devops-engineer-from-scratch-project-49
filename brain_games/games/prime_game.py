@@ -29,7 +29,7 @@ def is_prime(number: int) -> bool:
 
 
 def get_question():
-    number = random.randint(0, 100)
+    number = random.randbelow(101)
     return number, check_answer(number) 
 
 
