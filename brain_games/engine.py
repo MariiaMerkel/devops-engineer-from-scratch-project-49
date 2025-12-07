@@ -1,19 +1,17 @@
 import prompt
-import random
 from brain_games.cli import welcome_user
 from typing import Callable
 
 
-def game_engine (rules: str, max_tries: int, func_question: Callable):
+def game_engine(rules: str, max_tries: int, func_question: Callable):
 	name = welcome_user()
 	print(f"Game rules: {rules}")
-	win = False
 	count_tries = 0
 
 	while count_tries < max_tries:
 		question, correct_answer = func_question()
 		print(f"Question: {question}")
-		answer = prompt.string(f'Your answer: ')
+		answer = prompt.string('Your answer: ')
 		check = str(answer) == str(correct_answer)
 		if check:
 			print("Correct!")

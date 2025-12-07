@@ -1,4 +1,3 @@
-import prompt
 import random
 
 
@@ -10,6 +9,7 @@ OPERATORS = ('+', '-', '*')
 
 MAX_TRIES = 3
 RULES = "What is the result of the expression?"
+
 
 def get_question():
     operator = random.choice(OPERATORS)
@@ -29,5 +29,7 @@ def get_question():
 
     return str(f"{first} {operator} {second}"), correct_answer
 
+
 if __name__ == "__main__":
     main()
+    

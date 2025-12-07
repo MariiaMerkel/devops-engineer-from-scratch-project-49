@@ -14,6 +14,7 @@ def check_answer(number) -> bool:
     
     return 'yes' if correct_answer else 'no'
 
+
 def is_prime(number:int) -> bool:
     if number <= 1:
         return False
@@ -27,6 +28,7 @@ def is_prime(number:int) -> bool:
             return False
     
     return True
+
 
 def get_question():
     number = random.randint(0, 100)

@@ -24,5 +24,6 @@ def get_question():
     progressive[skip] = '..'
     return str(' '.join(str(x) for x in progressive)), right_answer
 
+
 if __name__ == "__main__":
     main()

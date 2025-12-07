@@ -9,6 +9,7 @@ def main():
 MAX_TRIES = 3
 RULES = "Find the greatest common divisor of given numbers."
 
+
 def get_question():
     first = random.randint(1, 100)
     second = random.randint(1, 100)
