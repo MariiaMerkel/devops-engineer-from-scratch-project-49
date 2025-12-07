@@ -23,20 +23,25 @@ def get_question():
         case '+':
             first = random.randint(0, 100)
             second = random.randint(0, 100)
+            correct_answer = int(first + second)
         case '-':
             second = random.randint(0, 100)
             first = second + random.randint(0, 50)
+            correct_answer = int(first - second)
         case '*':
             second = random.randint(0, 20)
             first = second + random.randint(0, 20)
+            correct_answer = int(first * second)
         case '/':
             second = random.randint(1, 20)
             first = second * random.randint(0, 10)
+            correct_answer = int(first / second)
         case '%':
             second = random.randint(1, 20)
-            first = second * random.randint(0, 10) + random(0, second)
+            first = second * random.randint(0, 10) + random.randint(0, second)
+            correct_answer = int(first % second)
 
-    return str(f"{first} {operator} {second}")
+    return str(f"{first} {operator} {second}"), correct_answer
 
 def calculation_of_expression(question:str) -> int:
     first, operator, second = question.split(' ')

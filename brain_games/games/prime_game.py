@@ -30,7 +30,8 @@ def is_prime(number:int) -> bool:
     return True
 
 def get_question():
-    return random.randint(0, 100)
+    number = random.randint(0, 100)
+    return number, check_answer(number) 
 
 if __name__ == "__main__":
     main()

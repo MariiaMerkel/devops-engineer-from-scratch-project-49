@@ -22,7 +22,7 @@ def get_question():
     global right_answer
     right_answer = progressive[skip]
     progressive[skip] = '...'
-    return str(', '.join(str(x) for x in progressive))
+    return str(', '.join(str(x) for x in progressive)), right_answer
 
 if __name__ == "__main__":
     main()
