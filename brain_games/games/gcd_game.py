@@ -1,4 +1,4 @@
-import random
+import secrets
 import math
 
 
@@ -11,8 +11,8 @@ RULES = "Find the greatest common divisor of given numbers."
 
 
 def get_question():
-    first = random.randbelow(101)
-    second = random.randbelow(101)
+    first = secrets.randbelow(101)
+    second = secrets.randbelow(101)
     return str(f"{first} {second}"), math.gcd(int(first), int(second))
 
 

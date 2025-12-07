@@ -1,4 +1,4 @@
-import random
+import secrets
 
 
 def main():
@@ -29,7 +29,7 @@ def is_prime(number: int) -> bool:
 
 
 def get_question():
-    number = random.randbelow(101)
+    number = secrets.randbelow(101)
     return number, check_answer(number) 
 
 

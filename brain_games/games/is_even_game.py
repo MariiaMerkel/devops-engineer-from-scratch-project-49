@@ -1,4 +1,4 @@
-import random
+import secrets
 
 
 def main():
@@ -16,7 +16,7 @@ def check_answer(question: int, answer: str) -> bool:
 
 
 def get_question():
-    question = random.randbelow(101)
+    question = secrets.randbelow(101)
     return question, "yes" if question % 2 == 0 else "no"
 
 
