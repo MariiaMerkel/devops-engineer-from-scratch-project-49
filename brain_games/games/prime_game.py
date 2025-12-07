@@ -6,14 +6,13 @@ def main():
 
 
 MAX_TRIES = 3
-RULES = "Input 'yes' if this number is prime and 'no' if it is not prime"
+RULES = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
-def check_answer(question: str, answer: str) -> bool:
-    question = int(question)
-    right_answer = is_prime(question)
+def check_answer(number) -> bool:
+    correct_answer = is_prime(number)
     
-    return (right_answer and answer == 'yes') or (not right_answer and answer == 'no')
+    return 'yes' if correct_answer else 'no'
 
 def is_prime(number:int) -> bool:
     if number <= 1:
