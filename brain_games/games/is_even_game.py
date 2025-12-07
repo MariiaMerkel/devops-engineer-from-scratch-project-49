@@ -5,9 +5,6 @@ import random
 def main():
     print("Welcome to the Brain Games!")
 
-
-# NUMBERS = (1, 2, 3, 4, 5, 6, 7, 8, 9)
-
 MAX_TRIES = 3
 RULES = 'Answer "yes" if the number is even, otherwise answer "no".'
 

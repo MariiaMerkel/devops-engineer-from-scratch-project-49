@@ -9,7 +9,7 @@ def main():
 OPERATORS = ('+', '-', '*', '/', '%')
 
 MAX_TRIES = 3
-RULES = "Calculate the expression and input result."
+RULES = "What is the result of the expression?"
 
 
 def check_answer(question: str, answer: str) -> bool:

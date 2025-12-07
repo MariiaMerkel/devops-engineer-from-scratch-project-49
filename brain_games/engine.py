@@ -14,7 +14,7 @@ def game_engine (rules: str, max_tries: int, func_question: Callable):
 		question, correct_answer = func_question()
 		print(f"Question: {question}")
 		answer = prompt.string(f'Your answer: ')
-		check = str(answer) == str(correct_answer) #check_answer(question, answer)
+		check = str(answer) == str(correct_answer)
 		if check:
 			print("Correct!")
 			count_tries += 1
