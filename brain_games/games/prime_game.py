@@ -5,7 +5,6 @@ def main():
     print("Welcome to the Brain Games!")
 
 
-MAX_TRIES = 3
 RULES = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
@@ -31,7 +30,3 @@ def is_prime(number: int) -> bool:
 def get_question():
     number = secrets.randbelow(101)
     return number, check_answer(number) 
-
-
-if __name__ == "__main__":
-    main()

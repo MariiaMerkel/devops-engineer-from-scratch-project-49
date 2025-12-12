@@ -8,7 +8,6 @@ def main():
     print("Welcome to the Brain Games!")
 
 
-MAX_TRIES = 3
 RULES = "What number is missing in the progression?"
 
 
@@ -25,7 +24,3 @@ def get_question():
     right_answer = progressive[skip]
     progressive[skip] = '..'
     return str(' '.join(str(x) for x in progressive)), right_answer
-
-
-if __name__ == "__main__":
-    main()

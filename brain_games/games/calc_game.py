@@ -6,8 +6,6 @@ def main():
 
 
 OPERATORS = ('+', '-', '*')
-
-MAX_TRIES = 3
 RULES = "What is the result of the expression?"
 
 
@@ -30,7 +28,3 @@ def get_question():
             correct_answer = int(first * second)
 
     return str(f"{first} {operator} {second}"), correct_answer
-
-
-if __name__ == "__main__":
-    main()
