@@ -1,14 +1,7 @@
 import secrets
 
 
-right_answer = 0
-
-
 RULES = "What number is missing in the progression?"
-
-
-def check_answer(question: str, answer: str) -> bool:
-    return right_answer == int(answer)
 
 
 def get_question():
@@ -16,7 +9,6 @@ def get_question():
     step = secrets.randbelow(11)
     skip = secrets.randbelow(10)
     progressive = [first + step * i for i in range(10)]
-    global right_answer
     right_answer = progressive[skip]
     progressive[skip] = '..'
     return str(' '.join(str(x) for x in progressive)), right_answer
