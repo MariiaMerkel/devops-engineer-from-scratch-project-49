@@ -2,20 +2,18 @@ import prompt
 from brain_games.cli import welcome_user
 from typing import Callable
 
+MAX_TRIES = 3
 
-def game_engine(rules: str, func_question: Callable):
+def game_engine(game: object):
 	name = welcome_user()
-	print(f"Game rules: {rules}")
-	count_tries = 0
+	print(f"Game rules: {game.RULES}")
 
-	for tries in range(3):
-		question, correct_answer = func_question()
+	for tries in range(MAX_TRIES):
+		question, correct_answer = game.get_question()
 		print(f"Question: {question}")
 		answer = prompt.string('Your answer: ')
-		check = str(answer) == str(correct_answer)
-		if check:
+		if str(answer) == str(correct_answer):
 			print("Correct!")
-			count_tries += 1
 		else:
 			print(
 				f"'{answer}' is wrong answer ;(. "

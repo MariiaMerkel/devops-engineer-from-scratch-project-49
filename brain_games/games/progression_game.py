@@ -4,10 +4,6 @@ import secrets
 right_answer = 0
 
 
-def main():
-    print("Welcome to the Brain Games!")
-
-
 RULES = "What number is missing in the progression?"
 
 

@@ -2,10 +2,6 @@ import secrets
 import math
 
 
-def main():
-    print("Welcome to the Brain Games!")
-
-
 RULES = "Find the greatest common divisor of given numbers."
 
 

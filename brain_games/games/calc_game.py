@@ -1,10 +1,6 @@
 import secrets
 
 
-def main():
-    print("Welcome to the Brain Games!")
-
-
 OPERATORS = ('+', '-', '*')
 RULES = "What is the result of the expression?"
 

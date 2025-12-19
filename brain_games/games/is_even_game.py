@@ -1,10 +1,6 @@
 import secrets
 
 
-def main():
-    print("Welcome to the Brain Games!")
-
-
 RULES = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
