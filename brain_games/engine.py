@@ -1,8 +1,8 @@
 import prompt
 from brain_games.cli import welcome_user
-from typing import Callable
 
 MAX_TRIES = 3
+
 
 def game_engine(game: object):
 	name = welcome_user()
